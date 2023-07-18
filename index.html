@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Potatoes Example</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        
+        .half {
+            width: 50%;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function displayPotatoes() {
+            var input = document.getElementById("inputField");
+            var inputValue = input.value;
+            var output = document.getElementById("outputField");
+            output.textContent = ('Hashbrowns, Fries, Tatortots');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="half">
+            <label for="inputField">What food do you like?(potatoes)</label>
+            <input type="text" id="inputField">
+            <button onclick="displayPotatoes()">Submit</button>
+        </div>
+        <div class="half">
+            <p id="outputField"></p>
+        </div>
+    </div>
+</body>
+</html>
